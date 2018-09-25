@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Styled from 'styled-components';
+import logo from '../../images/bq_logo.png';
 
 const NavWrap = Styled.nav`
   background: #E5BEBE;
@@ -20,7 +21,7 @@ const UserDetails = Styled.div`
 const Nav = () => (
   <NavWrap>
     <Link to={'/'}>
-      <img src="/public/bq_logo.png" />
+      <img src={logo} />
     </Link>
     <UserDetails>
       Tammy

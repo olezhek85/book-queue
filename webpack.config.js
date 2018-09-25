@@ -45,5 +45,8 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
-  plugins: [new FaviconsWebpackPlugin('./public/bq_logo.png'), htmlPlugin]
+  plugins: [
+    new FaviconsWebpackPlugin('./src/client/images/bq_logo.png'),
+    htmlPlugin
+  ]
 };
